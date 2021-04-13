@@ -6,5 +6,6 @@ import guru.springfamework.api.v1.model.CustomerListDTO;
 
 public interface CustomerService {
     CustomerListDTO getAllCustomers();
-    CustomerDTO getCustomerByName(String name);
+    CustomerDTO getCustomerById(Long id);
+    CustomerDTO createCustomer(CustomerDTO customerDTO);
 }
